@@ -1,0 +1,85 @@
+.hero {
+    height: 100vh;
+    position: relative;
+
+    .back-video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .overlay {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0; 
+        top: 0;
+    }
+
+    &-text {
+        color: #fff;
+        z-index: 10;
+        position: absolute;
+        // border: 1px solid blue;
+        margin-left: 10%;
+        top: 14em;
+
+        h1 {
+            font-size: 3.5em;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1.3em;
+            span {
+                color: $primary-green;
+            }
+        }
+
+        p {
+            font-size: 25px;
+            margin-bottom: 2.5em;
+        }
+
+        .btn {
+            @include btn;
+        }
+
+
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hero {
+        text-align: center;
+        &-text {
+            margin: 0;
+            position: relative;
+            
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .btn {
+                @include smallbtn;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.carousel-slider {
+    width: 70%;
+    margin: auto;
+    margin-top: 7em;
+    .react-3d-carousel  {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .carousel-slider {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,17 @@
+@mixin btn {
+    color: #fff;
+    background: $primary-green;
+    font-size: 28px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    transition: background-color .2s;
+
+    &:hover {
+        background-color: darken($primary-green, 5%);
+    }
+}
+
+@mixin smallbtn {
+    @include btn;
+    font-size: 1.4em !important;
+}

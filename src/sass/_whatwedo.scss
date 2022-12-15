@@ -1,0 +1,50 @@
+.what-we-do {
+    // border: 3px solid red;
+    padding: 7em 7em;
+
+    h1 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    
+    .container {
+        margin-top: 5em; 
+        // border: 3px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        .box {
+            border-radius: 25px 25px 0 0;
+            width: 30%;
+            max-width: 350px;
+            min-width: 300px;
+            margin-bottom: 3em;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 2em;
+            box-shadow: 0px 0px 20px 3px rgba(51, 51, 51, 0.127);
+            cursor: pointer;
+            transition: .3s transform;
+
+            p {
+                padding: 0 1em;
+            }
+            img {
+                width: 100%;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .what-we-do {
+        padding: 4em 2em;
+    }
+}
